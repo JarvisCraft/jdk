@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1994, 2019, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 1994, 2020, Oracle and/or its affiliates. All rights reserved.
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  *
  * This code is free software; you can redistribute it and/or modify it
@@ -200,7 +200,7 @@ public class DataOutputStream extends FilterOutputStream implements DataOutput {
         incCount(4);
     }
 
-    private byte writeBuffer[] = new byte[8];
+    private final byte writeBuffer[] = new byte[8];
 
     /**
      * Writes a {@code long} to the underlying output stream as eight
